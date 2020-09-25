@@ -137,6 +137,7 @@ public class Assignment21 {
 	 */
 	/*
 	 * write your understanding here.
+	 Because the swap method is a static method. 
 	 */
 	public static void main(String[] args) {
 		Employee a = new Employee("Jenny", 20, Gender.FEMALE, 2000);
@@ -148,7 +149,7 @@ public class Assignment21 {
 		System.out.println("After: b=" + b.getName());
 	}
 
-	public static void swap(Employee x, Employee y) {
+	static void swap(Employee x, Employee y) {
 		Employee temp = x;
 		x = y;
 		y = temp;
